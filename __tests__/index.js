@@ -1,13 +1,18 @@
 import React from 'react';
 import expect from 'expect';
-import renderer from 'react-test-renderer';
+import { configure, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import App from '../src/client/components/App';
 
 describe('App', () => {
+  beforeAll(() => {
+    configure({ adapter: new Adapter() });
+  });
   it('App renders hello world', () => {
-    const component = renderer.create(<App />);
-    const json = component.toJSON();
-    console.log(json);
-    expect(json).toMatchSnapshot();
+    const app = shallow(<App />);
+    console.log(app);
+    console.log(app.find('div'));
+    console.log(app.find('div').text());
+    expect(app.find('div').text()).toEqual('Hello world!');
   });
 });
