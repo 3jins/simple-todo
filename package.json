@@ -1,0 +1,33 @@
+{
+  "name": "simple-todo",
+  "version": "1.0.0",
+  "description": "A toy project to practice React with TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3jins/simple-todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3jins/simple-todo/issues"
+  },
+  "homepage": "https://github.com/3jins/simple-todo#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "enzyme": "^3.9.0",
+    "jest": "^24.8.0",
+    "react-test-renderer": "^16.8.6"
+  }
+}
